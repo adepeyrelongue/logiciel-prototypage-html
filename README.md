@@ -1,4 +1,4 @@
-# inea-builder
+# Logiciel de prototypage HTML
 
 ## Project setup
 ```
