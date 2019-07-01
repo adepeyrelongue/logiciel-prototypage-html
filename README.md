@@ -1,4 +1,4 @@
-# Logiciel de prototypage HTML
+# Logiciel de prototypage HTML, réalisé avec Vue.js et Electron
 
 ## Project setup
 ```
