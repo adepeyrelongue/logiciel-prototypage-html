@@ -1,0 +1,9 @@
+libelle: Panneau vierge
+definition:
+  flexGrowSelf: true
+  flex: col
+  couleur: blanc
+  espaceHaut: '1'
+  espaceDroit: '1'
+  espaceBas: '1'
+  espaceGauche: '1'

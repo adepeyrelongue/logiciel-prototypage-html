@@ -1,0 +1,36 @@
+libelle: Liste responsive
+definition:
+  ariaLabel: définition
+  blocs:
+  - tag: element-liste
+    blocs:
+    - tag: contenus-rwd
+      blocs:
+      - tag: contenu-rwd
+        xs: 12
+        sm: 8
+        blocs:
+        - texte: Texte gauche
+          tag: span-texte
+      - tag: contenu-rwd
+        xs: 12
+        sm: 4
+        blocs:
+        - texte: Texte droit
+          tag: span-texte
+  - tag: element-liste
+    blocs:
+    - tag: contenus-rwd
+      blocs:
+      - tag: contenu-rwd
+        xs: 12
+        sm: 8
+        blocs:
+        - texte: Texte gauche
+          tag: span-texte
+      - tag: contenu-rwd
+        xs: 12
+        sm: 4
+        blocs:
+        - texte: Texte droit
+          tag: span-texte

@@ -1,0 +1,8 @@
+libelle: Message d'erreur
+definition:
+  typeMessage: danger
+  liensListe:
+  - texte: Date de naissance
+  blocs:
+  - tag: span-texte
+    texte: 'Les informations suivantes ne sont pas valides :'

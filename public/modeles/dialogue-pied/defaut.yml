@@ -1,0 +1,10 @@
+libelle: Pied de dialogue
+definition:
+  blocs:
+  - tag: bloc-validation
+    xs: 12
+    sm: 6
+    justifyContent: center
+    blocs:
+    - tag: bouton-fermer-dialogue
+      libelle: Fermer

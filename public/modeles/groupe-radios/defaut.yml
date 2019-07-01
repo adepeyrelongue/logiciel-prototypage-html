@@ -1,0 +1,13 @@
+libelle: Groupe radios
+definition:
+  legende: Légende
+  xs: 12
+  blocs:
+  - tag: bouton-radio
+    xs: 2
+    libelle: libelle 1
+    checked: false
+  - tag: bouton-radio
+    xs: 2
+    libelle: libelle 2
+    checked: true

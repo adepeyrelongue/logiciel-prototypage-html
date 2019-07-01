@@ -1,0 +1,19 @@
+libelle: Question du moment
+definition:
+  flexGrowSelf: true
+  href: destination-du-lien
+  flex: inline-col
+  couleur: gris-300
+  espaceHaut: '1_2'
+  espaceDroit: '1_2'
+  espaceBas: '1_2'
+  espaceGauche: '1_2'
+  bordureBasse: 2
+  bordureBasseCouleur: particulier
+  blocs:
+  - tag: span-texte
+    couleur: noir
+    texte: >-
+      J'ai déclaré des réductions et crédits d'impôt en 2018,
+      suis-je concerné par le versement de l'avance de 60% en
+      janvier 2019 ?

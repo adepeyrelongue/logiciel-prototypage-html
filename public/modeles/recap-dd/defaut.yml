@@ -1,0 +1,6 @@
+libelle: Description
+definition:
+  blocs:
+  - tag : span-texte
+    texte: Description
+ 

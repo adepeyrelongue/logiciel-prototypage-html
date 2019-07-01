@@ -1,0 +1,9 @@
+libelle: Deux contenus 2/3 1/3
+definition:
+  blocs:
+  - tag: contenu-rwd
+    xs: 12
+    sm: 8
+  - tag: contenu-rwd
+    xs: 12
+    sm: 4

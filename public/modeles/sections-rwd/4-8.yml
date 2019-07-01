@@ -1,0 +1,9 @@
+libelle: Deux sections 1/3 2/3
+definition:
+  blocs:
+  - tag: section-rwd
+    xs: 12
+    sm: 4
+  - tag: section-rwd
+    xs: 12
+    sm: 8

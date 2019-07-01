@@ -1,0 +1,11 @@
+libelle: Tableau vide
+definition:
+  titre: Titre dialogue
+  captionLabel: caption de tableau
+  elements:
+    entete:
+      blocs:
+      - tag: ligne-entete-tableau
+    corps:
+      blocs:
+      - tag: ligne-corps-tableau

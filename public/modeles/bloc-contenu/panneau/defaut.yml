@@ -1,0 +1,9 @@
+libelle: Défaut
+definition:
+  flexGrowSelf: true
+  flex: col
+  espaceHaut: defaut
+  espaceDroit: defaut
+  espaceBas: defaut
+  espaceGauche: defaut
+  couleur: blanc

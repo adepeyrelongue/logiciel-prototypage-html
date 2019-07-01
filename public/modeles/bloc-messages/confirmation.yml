@@ -1,0 +1,8 @@
+libelle: Message de confirmation
+definition:
+  blocs:
+  - tag: message
+    typeMessage: success
+    blocs:
+    - tag: span-texte
+      texte: Votre commande a bien été enregistrée.

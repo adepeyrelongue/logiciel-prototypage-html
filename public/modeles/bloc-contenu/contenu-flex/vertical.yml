@@ -1,0 +1,4 @@
+libelle: Distribution verticale
+definition:
+  flexGrowSelf: true
+  flex: col

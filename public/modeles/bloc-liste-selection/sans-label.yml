@@ -1,0 +1,13 @@
+libelle: Sans libellé et deux options
+definition:
+  libelle: Libellé
+  xs: 12
+  sm: 6
+  elements:
+    controle:
+      xs: 12
+      blocs:
+      - tag: liste-selection-option
+        libelle: Option 1
+      - tag: liste-selection-option
+        libelle: Option 2

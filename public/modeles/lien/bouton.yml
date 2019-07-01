@@ -1,0 +1,5 @@
+libelle: Lien forme bouton
+definition:
+  href: destination-du-lien
+  bouton: true
+  texte: Accéder

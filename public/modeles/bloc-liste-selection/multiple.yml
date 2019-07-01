@@ -1,0 +1,21 @@
+libelle: Multiple
+definition:
+  libelle: Libellé
+  xs: 12
+  sm: 6
+  elements:
+    libelle:
+      xs: 12
+      sm: 6
+    controle:
+      multiple: true
+      lignes: 5
+      xs: 12
+      sm: 6
+      blocs:
+      - tag: liste-selection-option
+        libelle: Option 1
+      - tag: liste-selection-option
+        libelle: Option 2
+      - tag: liste-selection-option
+        libelle: Option 3

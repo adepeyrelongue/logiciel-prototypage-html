@@ -1,0 +1,12 @@
+libelle: Validation d'un formulaire
+definition:
+  xs: 12
+  sm: 6
+  justifyContent: center
+  blocs:
+  - tag: bouton-submit
+    libelle: Valider
+  - tag: lien
+    texte: Annuler
+    href: lien-retour
+    bouton: true

@@ -1,0 +1,30 @@
+libelle: Accès à un espace
+definition:
+  href: destination-du-lien
+  flex: inline-col
+  sansSurlignement: true
+  margeBasse: '1'
+  blocs:
+  - tag: panneau-flex
+    flexGrowSelf: true
+    flex: inline-col
+    justifyContent: center
+    alignItems: center
+    couleur: gris-100
+    blocs:
+    - tag: image-externe
+      largeur: 180
+      hauteur: 150
+  - tag: panneau-flex
+    flex: inline-col
+    justifyContent: center
+    alignItems: center
+    couleur: particulier
+    espaceHaut: '1'
+    espaceDroit: '1'
+    espaceBas: '1'
+    espaceGauche: '1'
+    taillePx: 18
+    blocs:
+    - texte: Particulier
+      tag: span-texte

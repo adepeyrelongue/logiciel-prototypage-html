@@ -1,0 +1,27 @@
+libelle: Ligne de corps
+definition:
+  blocs:
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 1
+  - tag: cellule-tableau
+    blocs:
+    - tag: span-texte
+      texte: Texte 2
+  - tag: cellule-tableau
+    blocs:
+    - tag: span-texte
+      texte: Texte 3
+  - tag: cellule-tableau
+    blocs:
+    - tag: span-texte
+      texte: Texte 4
+  - tag: cellule-tableau
+    blocs:
+    - tag: span-texte
+      texte: Texte 5
+  - tag: cellule-tableau
+    blocs:
+    - tag: span-texte
+      texte: Texte 6

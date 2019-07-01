@@ -1,0 +1,96 @@
+libelle: Informations
+definition:
+  title: Sélectionnez votre trajet aller
+  thematique: partenaire
+  elements:
+    espaceDialogue:
+      blocs:
+      - nomPageActive: Billet de train
+        blocs:
+        - tag: lien
+          texte: Accueil
+          href: index.html
+        tag: bloc-fil-ariane
+      - elements:
+          titre:
+            niveau: 1
+            libelle: Billet de train
+            icone: dgfipicon dgfipicon-consulter-voies
+        tag: bloc-titre
+      - tag: bloc-contenu
+        blocs:
+        - couleur: blanc
+          espaceHaut: '1'
+          espaceBas: '1'
+          tag: panneau-rwd
+          blocs:
+          - blocs:
+            - tag: contenu-rwd
+              xs: 12
+              blocs:
+              - niveau: 2
+                libelle: Votre recherche
+                tag: titre
+            tag: contenus-rwd
+          - xsDt: 12
+            smDt: 2
+            mdDt: 2
+            xsDd: 12
+            smDd: 10
+            mdDd: 10
+            blocs:
+            - tag: recap-dt
+              libelle: Voyage
+            - tag: recap-dd
+              blocs:
+              - tag: span-texte
+                texte: Aller-retour
+            - tag: recap-dt
+              libelle: Départ
+            - tag: recap-dd
+              blocs:
+              - tag: span-texte
+                texte: Paris Gare du Nord
+            - tag: recap-dt
+              libelle: Arrivée
+            - tag: recap-dd
+              blocs:
+              - tag: span-texte
+                texte: Lille Europe
+            - tag: recap-dt
+              libelle: Aller
+            - tag: recap-dd
+              blocs:
+              - tag: span-texte
+                texte: 05/11/2018
+              - texte: ' à partir de '
+                tag: span-texte
+                couleur: gris-600
+              - texte: 8h
+                tag: span-texte
+            - tag: recap-dt
+              libelle: Retour
+            - tag: recap-dd
+              blocs:
+              - tag: span-texte
+                texte: 06/11/2018
+              - texte: ' à partir de '
+                tag: span-texte
+                couleur: gris-600
+              - texte: 18h
+                tag: span-texte
+            - tag: recap-dt
+              libelle: Trajets directs
+            - blocs:
+              - tag: span-texte
+                texte: indifférent
+              tag: recap-dd
+            tag: recap
+          - xs: 12
+            sm: 6
+            blocs:
+            - tag: lien
+              texte: Modifier ma recherche
+              href: billet-train.html
+              bouton: true
+            tag: bloc-validation

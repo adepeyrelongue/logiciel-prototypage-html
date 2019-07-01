@@ -1,0 +1,33 @@
+libelle: Actualité en bref
+definition:
+  href: destination-du-lien
+  flex: inline-col
+  couleur: blanc
+  espaceHaut: '1_2'
+  espaceDroit: '1_2'
+  espaceBas: '1_2'
+  espaceGauche: '1_2'
+  bordureGauche: 5
+  bordureGaucheCouleur: professionnel
+  bordureBasse: 1
+  bordureBasseCouleur: gris-300
+  blocs:
+  - tag: paragraphe
+    sansStyle: true
+    heading: true
+    ariaLevel: 3
+    margeBasse: '1_4'
+    taillePx: 16
+    couleur: noir
+    blocs:
+    - tag: span-texte
+      texte: >-
+        Entreprises et administration fiscale : une nouvelle
+        relation de confiance
+  - tag: paragraphe
+    sansStyle: true
+    taillePx: 13
+    couleur: gris-700
+    blocs:
+    - tag: span-texte
+      texte: Professionnel - 15-03-2019

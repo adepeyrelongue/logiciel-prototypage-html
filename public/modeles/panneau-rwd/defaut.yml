@@ -1,0 +1,5 @@
+libelle: Panneau vierge
+definition:
+  couleur: gris-200
+  espaceHaut: '1'
+  espaceBas: '1'

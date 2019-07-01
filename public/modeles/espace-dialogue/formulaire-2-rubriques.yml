@@ -1,0 +1,36 @@
+libelle: Formulaire avec deux rubriques
+definition:
+  formulaire: true
+  blocs:
+  - tag: bloc-contenu
+    blocs:
+    - tag: col-bs
+      xs: 12
+      blocs:
+      - tag: rubrique
+        blocs:
+        - tag: ligne-bs
+          blocs:
+          - tag: col-bs
+            xs: 12
+            blocs:
+            - tag: titre
+              niveau: 2
+              libelle: Titre rubrique 1
+        - tag: ligne-formulaire
+  - tag: bloc-contenu
+    blocs:
+    - tag: col-bs
+      xs: 12
+      blocs:
+      - tag: rubrique
+        blocs:
+        - tag: ligne-bs
+          blocs:
+          - tag: col-bs
+            xs: 12
+            blocs:
+            - tag: titre
+              niveau: 2
+              libelle: Titre rubrique 2
+        - tag: ligne-formulaire

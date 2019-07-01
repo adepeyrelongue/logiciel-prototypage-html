@@ -1,0 +1,17 @@
+libelle: Liste avec puces
+definition:
+  ariaLabel: définition
+  pucesInea: true
+  blocs:
+  - tag: element-liste
+    blocs:
+    - tag: span-texte
+      texte: Item 1
+  - tag: element-liste
+    blocs:
+    - tag: span-texte
+      texte: Item 2
+  - tag: element-liste
+    blocs:
+    - tag: span-texte
+      texte: Item 3

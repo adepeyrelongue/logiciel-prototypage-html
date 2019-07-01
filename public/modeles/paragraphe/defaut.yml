@@ -1,0 +1,5 @@
+libelle: Paragraphe simple
+definition:
+  blocs:
+    - tag : span-texte
+      texte: Texte du paragraphe.

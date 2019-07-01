@@ -1,0 +1,6 @@
+libelle: Avec une ligne de champs
+definition:
+  legende: Légende
+  xs: 12
+  blocs:
+  - tag: champs

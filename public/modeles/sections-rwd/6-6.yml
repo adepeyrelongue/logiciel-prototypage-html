@@ -1,0 +1,9 @@
+libelle: Deux sections de même largeur
+definition:
+  blocs:
+  - tag: section-rwd
+    xs: 12
+    sm: 6
+  - tag: section-rwd
+    xs: 12
+    sm: 6

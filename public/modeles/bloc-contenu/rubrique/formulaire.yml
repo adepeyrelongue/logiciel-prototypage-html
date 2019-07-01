@@ -1,0 +1,8 @@
+libelle: Avec formulaire
+definition:
+  flexGrowSelf: true
+  formulaire: true
+  blocs:
+  - tag: titre
+    niveau: 2
+    libelle: Titre rubrique

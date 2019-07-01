@@ -1,0 +1,19 @@
+libelle: Trois rubriques + badge
+definition:
+  ariaLabel: définition
+  blocs:
+  - tag: element-menu-vertical
+    libelle: Rubrique 1
+    href: destination
+    active: true
+    couleur: particulier
+  - tag: element-menu-vertical
+    libelle: Rubrique 2
+    href: destination
+    couleur: professionnel
+    badge: '2'
+    badgeSr: éléments
+  - tag: element-menu-vertical
+    libelle: Rubrique 3
+    href: destination
+    couleur: gris-700

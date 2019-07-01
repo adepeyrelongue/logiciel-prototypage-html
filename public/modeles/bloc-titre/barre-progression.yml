@@ -1,0 +1,20 @@
+libelle: Avec barre de progression
+definition:
+  elements:
+    titre:
+      niveau: 1
+      libelle: Titre espace de dialogue
+      icone: dgfipicon dgfipicon-panier-cart-vide
+    barreProgression:
+      md: 8
+      lg: 7
+      blocs:
+      - tag: etape-barre-progression
+        libelle: Panier
+        active: true
+      - tag: etape-barre-progression
+        libelle: Coordonnées
+      - tag: etape-barre-progression
+        libelle: Paiement
+      - tag: etape-barre-progression
+        libelle: Confirmation

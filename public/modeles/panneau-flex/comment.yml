@@ -1,0 +1,258 @@
+libelle: Comment faire
+definition:
+  flexGrowSelf: true
+  flex: col
+  axePrincipalPx: 470
+  couleur: blanc
+  espaceHaut: '1'
+  espaceDroit: '1'
+  espaceBas: '1'
+  espaceGauche: '1'
+  blocs:
+  - tag: flex
+    flexGrowSelf: true
+    flex: row
+    blocs:
+    - tag: panneau-lien
+      flexTaille: '25'
+      href: destination-du-lien
+      flex: inline-col
+      alignItems: center
+      sansSurlignement: true
+      bordure: 1
+      bordureCouleur: particulier
+      couleurTexte: particulier
+      taillePx: 18
+      espaceHaut: '1'
+      espaceDroit: '1'
+      espaceBas: '1'
+      espaceGauche: '1'
+      blocs:
+      - tag: image-svg
+        margeBasse: '1_4'
+        largeur: 80
+        hauteur: 80
+        couleur: particulier
+        viewBox: 0 0 50 50
+        paths:
+        - >-
+          M8.35 10.685c-2.16 0-4.41 3.695-4.41 6.577v15.933c0 2.88 2.06
+          6.502 4.22 6.51l33.805.128c2.163.008 4.3-3.76
+          4.31-6.638l.065-16.063c.01-2.882-2.215-6.342-4.375-6.32l-33.74-.13zM41.9
+          43.968H8.16C3.76 43.968.14 39.146.14 33.195V17.132c0-5.955
+          3.62-10.77 8.023-10.77H41.9c4.436 0 8.024 4.818 8.024
+          10.77v16.06c0 5.95-3.588 10.77-8.023 10.77
+        - >-
+          M34.158 30.628c.543.42 1.48.708 2.22.742 1.212.013 1.838-.86
+          1.846-2.036.007-1.307-.597-1.963-1.71-2.955-1.835-1.532-2.52-3.452-2.507-5.086.016-2.894
+          1.47-5.3 4.26-5.266.886.032 1.735.366 2.113.675l-.427
+          3.032c-.393-.33-.967-.62-1.71-.65-1.103.006-1.66.898-1.66
+          1.874-.007 1.062.383 1.635 1.825 2.832 1.76 1.47 2.4 3.29 2.39
+          5.205-.023 3.303-1.852 5.438-4.475
+          5.428-1.07-.036-2.1-.415-2.564-.767l.393-3.03
+        - >-
+          M26.304
+          27.537l-.48-3.785c-.13-1.097-.338-2.91-.468-4.088l-.06.004c-.13
+          1.2-.313 3.058-.444 4.098l-.473 3.776 1.922-.007zM24.14
+          30.29l-.575 4.127-2.53.048 2.79-18.123 3.132-.022 2.723
+          18.023-2.526.05-.59-4.128-2.42.022
+        - >-
+          M13.097 25l.46.028c1.387.022 1.993-1.23
+          2.004-2.96.018-1.598-.463-2.868-1.734-2.863l-.663.104-.07
+          5.697zm-2.66-8.4c.786-.21 1.82-.35 2.872-.33 1.627.02
+          2.913.353 3.803 1.504.823.96 1.184 2.472 1.187 4.05-.036
+          1.968-.484 3.38-1.246 4.39-.872 1.202-2.284 1.734-3.44
+          1.716l-.525-.03-.06 6.83-2.748-.045.158-18.084
+      - tag: paragraphe
+        sansStyle: true
+        alignement: center
+        blocs:
+        - tag: span-texte
+          texte: >-
+            Gérer mon prélèvement à la source, utiliser les services en
+            ligne...
+    - tag: panneau-lien
+      flexTaille: '25'
+      href: destination-du-lien
+      flex: inline-col
+      alignItems: center
+      sansSurlignement: true
+      bordure: 1
+      bordureGauche: 0
+      bordureCouleur: particulier
+      couleurTexte: particulier
+      taillePx: 18
+      espaceHaut: '1'
+      espaceDroit: '1'
+      espaceBas: '1'
+      espaceGauche: '1'
+      blocs:
+      - tag: icone
+        icone: dgfipicon dgfipicon-declarer
+        margeBasse: '1_4'
+        taillePx: 80
+      - tag: paragraphe
+        sansStyle: true
+        alignement: center
+        blocs:
+        - tag: span-texte
+          texte: Déclarer mes revenus
+    - tag: panneau-lien
+      flexTaille: '25'
+      href: destination-du-lien
+      flex: inline-col
+      alignItems: center
+      sansSurlignement: true
+      bordure: 1
+      bordureGauche: 0
+      bordureCouleur: particulier
+      couleurTexte: particulier
+      taillePx: 18
+      espaceHaut: '1'
+      espaceDroit: '1'
+      espaceBas: '1'
+      espaceGauche: '1'
+      blocs:
+      - tag: icone
+        icone: dgfipicon dgfipicon-payer
+        margeBasse: '1_4'
+        taillePx: 80
+      - tag: paragraphe
+        sansStyle: true
+        alignement: center
+        blocs:
+        - tag: span-texte
+          texte: 'Payer mes impôts, taxes, amendes...'
+    - tag: panneau-lien
+      flexTaille: '25'
+      href: destination-du-lien
+      flex: inline-col
+      alignItems: center
+      sansSurlignement: true
+      bordure: 1
+      bordureGauche: 0
+      bordureCouleur: particulier
+      couleurTexte: particulier
+      taillePx: 18
+      espaceHaut: '1'
+      espaceDroit: '1'
+      espaceBas: '1'
+      espaceGauche: '1'
+      blocs:
+      - tag: icone
+        icone: dgfipicon dgfipicon-situation-famille
+        margeBasse: '1_4'
+        taillePx: 80
+      - tag: paragraphe
+        sansStyle: true
+        alignement: center
+        blocs:
+        - tag: span-texte
+          texte: Signaler mes changements de situation
+  - tag: flex
+    flexGrowSelf: true
+    flex: row
+    blocs:
+    - tag: panneau-lien
+      flexTaille: '25'
+      href: destination-du-lien
+      flex: inline-col
+      alignItems: center
+      sansSurlignement: true
+      bordure: 1
+      bordureHaute: 0
+      bordureCouleur: particulier
+      couleurTexte: particulier
+      taillePx: 18
+      espaceHaut: '1'
+      espaceDroit: '1'
+      espaceBas: '1'
+      espaceGauche: '1'
+      blocs:
+      - tag: icone
+        icone: dgfipicon dgfipicon-gerer-patrimoine
+        margeBasse: '1_4'
+        taillePx: 80
+      - tag: paragraphe
+        sansStyle: true
+        alignement: center
+        blocs:
+        - tag: span-texte
+          texte: Gérer mon patrimoine/mon logement
+    - tag: panneau-lien
+      flexTaille: '25'
+      href: destination-du-lien
+      flex: inline-col
+      alignItems: center
+      sansSurlignement: true
+      bordure: 1
+      bordureGauche: 0
+      bordureHaute: 0
+      bordureCouleur: particulier
+      couleurTexte: particulier
+      taillePx: 18
+      espaceHaut: '1'
+      espaceDroit: '1'
+      espaceBas: '1'
+      espaceGauche: '1'
+      blocs:
+      - tag: icone
+        icone: dgfipicon dgfipicon-resoudre-difficultes
+        margeBasse: '1_4'
+        taillePx: 80
+      - tag: paragraphe
+        sansStyle: true
+        alignement: center
+        blocs:
+        - tag: span-texte
+          texte: Présenter un recours auprès de la DGFiP
+    - tag: panneau-flex
+      flexTaille: '50'
+      flex: col
+      taillePx: 16
+      couleur: particulier
+      espaceHaut: '3_2'
+      espaceDroit: '1'
+      espaceBas: '3_2'
+      espaceGauche: '1'
+      blocs:
+      - tag: paragraphe
+        heading: true
+        taillePx: 22
+        margeBasse: '3_2'
+        blocs:
+        - tag: span-texte
+          texte: J'accède à mon espace particulier sécurisé
+      - tag: flex
+        flex: row
+        justifyContent: between
+        blocs:
+        - tag: liste
+          ariaLabel: fonctions de mon espace sécurisé
+          sansStyle: false
+          condensee: true
+          blocs:
+          - tag: element-liste
+            blocs:
+            - tag: lien
+              href: destination-du-lien
+              texte: Déclarer
+          - tag: element-liste
+            blocs:
+            - tag: lien
+              href: destination-du-lien
+              texte: Payer
+          - tag: element-liste
+            blocs:
+            - tag: lien
+              href: destination-du-lien
+              texte: Consulter
+          - tag: element-liste
+            blocs:
+            - tag: lien
+              href: destination-du-lien
+              texte: Réclamer
+        - tag: icone
+          icone: dgfipicon dgfipicon-cadenas-ferme
+          margeDroite: '3'
+          taillePx: 96

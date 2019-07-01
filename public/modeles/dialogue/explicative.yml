@@ -1,0 +1,26 @@
+libelle: Boite de dialogue explicative
+definition:
+  titre: Titre dialogue
+  elements:
+    contenu:
+      elements:
+        corps:
+          blocs:
+          - tag: contenus-rwd
+            blocs:
+            - tag: contenu-rwd
+              xs: 12
+              blocs:
+              - tag: paragraphe
+                blocs:
+                - tag: span-texte
+                  texte: Corps de la boite de dialogue
+        pied:
+          blocs:
+          - tag: bloc-validation
+            xs: 12
+            sm: 6
+            justifyContent: center
+            blocs:
+            - tag: bouton-fermer-dialogue
+              libelle: Fermer

@@ -1,0 +1,12 @@
+libelle: Trois contenus de même largeur
+definition:
+  blocs:
+  - tag: contenu-rwd
+    xs: 12
+    sm: 4
+  - tag: contenu-rwd
+    xs: 12
+    sm: 4
+  - tag: contenu-rwd
+    xs: 12
+    sm: 4

@@ -1,0 +1,18 @@
+libelle: Liste condensée avec puces
+definition:
+  ariaLabel: définition
+  pucesInea: true
+  condensee: true
+  blocs:
+  - tag: element-liste
+    blocs:
+    - tag: span-texte
+      texte: Item 1
+  - tag: element-liste
+    blocs:
+    - tag: span-texte
+      texte: Item 2
+  - tag: element-liste
+    blocs:
+    - tag: span-texte
+      texte: Item 3

@@ -1,0 +1,10 @@
+libelle: Bloc fil d'Ariane
+definition:
+  nomPageActive: Réservez votre voyage
+  blocs:
+  - tag: lien
+    texte: Accueil
+    href: accueil.html
+  - tag: lien
+    href: espace-adherents.html
+    texte: Espace adhérents

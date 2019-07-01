@@ -1,0 +1,5 @@
+libelle: Une section
+definition:
+  blocs:
+  - tag: section-rwd
+    xs: 12

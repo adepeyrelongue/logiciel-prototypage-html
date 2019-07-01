@@ -1,0 +1,7 @@
+libelle: Avec titre 2
+definition:
+  flexGrowSelf: true
+  blocs:
+  - tag: titre
+    niveau: 2
+    libelle: Titre rubrique

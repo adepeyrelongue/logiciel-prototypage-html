@@ -1,0 +1,4 @@
+libelle: Distribution horizontale
+definition:
+  flexGrowSelf: true
+  flex: row

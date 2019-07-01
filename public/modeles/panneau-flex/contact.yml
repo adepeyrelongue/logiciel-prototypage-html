@@ -1,0 +1,40 @@
+libelle: Accès au contact ou questions
+definition:
+  flexGrowSelf: true
+  flex: col
+  justifyContent: between
+  couleur: gris-900
+  espaceHaut: '1'
+  espaceDroit: '1'
+  espaceBas: '1'
+  espaceGauche: '1'
+  blocs:
+  - tag: titre-simple
+    niveau: 2
+    libelle: Questions ?
+    margeHaute: '0'
+    margeBasse: '1'
+    casse: uppercase
+  - tag: flex
+    flex: row
+    justifyContent: end
+    blocs:
+    - tag: flex
+      flexTaille: '66'
+      flex: row
+      blocs:
+      - tag: lien
+        flexGrowSelf: true
+        href: destination-du-lien
+        texte: Particulier
+        bouton: true
+        ariaLabel: Questions pour les particuliers
+        couleur: gris-800
+        margeDroite: '1'
+      - tag: lien
+        flexGrowSelf: true
+        href: destination-du-lien
+        texte: Professionnel
+        bouton: true
+        ariaLabel: Questions pour les professionnels
+        couleur: gris-800

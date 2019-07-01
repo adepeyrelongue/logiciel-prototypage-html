@@ -1,0 +1,9 @@
+libelle: Sans libellé
+definition:
+  libelle: Libellé
+  xs: 12
+  sm: 6
+  elements:
+    controle:
+      valeur: Valeur
+      xs: 12

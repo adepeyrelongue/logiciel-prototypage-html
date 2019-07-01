@@ -1,0 +1,5 @@
+libelle: Element de liste
+definition:
+  blocs:
+    - tag : span-texte
+      texte: Item 1

@@ -1,0 +1,14 @@
+libelle: Barre de progression
+definition:
+  md: 8
+  lg: 7
+  blocs:
+  - tag: etape-barre-progression
+    libelle: Panier
+    active: true
+  - tag: etape-barre-progression
+    libelle: Coordonnées
+  - tag: etape-barre-progression
+    libelle: Paiement
+  - tag: etape-barre-progression
+    libelle: Confirmation

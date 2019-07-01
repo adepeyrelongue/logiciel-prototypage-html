@@ -1,0 +1,5 @@
+libelle: Sans espaces
+definition:
+  flexGrowSelf: true
+  flex: col
+  couleur: blanc

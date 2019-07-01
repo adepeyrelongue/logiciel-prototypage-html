@@ -1,0 +1,8 @@
+libelle: Deux options
+definition:
+  libelle: Libellé
+  blocs:
+  - tag: liste-selection-option
+    libelle: Option 1
+  - tag: liste-selection-option
+    libelle: Option 2

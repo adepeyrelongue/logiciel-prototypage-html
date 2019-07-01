@@ -1,0 +1,7 @@
+libelle: Avec titre
+definition:
+  elements:
+    titre:
+      niveau: 1
+      libelle: Titre espace de dialogue
+      icone: dgfipicon dgfipicon-panier-cart-vide

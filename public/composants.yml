@@ -1,0 +1,450 @@
+page:
+  libelle: Page
+  editeur: pe-page
+  elements:
+    espaceDialogue:
+      libelle: Espace de dialogue
+      tag: espace-dialogue
+espace-dialogue:
+  libelle: Espace de dialogue
+  editeur: pe-espace-dialogue
+  blocs:
+  - bloc-fil-ariane
+  - bloc-titre
+  - bloc-messages
+  - bloc-contenu
+  - bloc-validation
+  - dialogue
+dialogue:
+  libelle: Boite de dialogue
+  editeur: pe-dialogue
+  elements:
+    contenu:
+      libelle: Contenu de dialogue
+      tag: dialogue-contenu
+      requis: true
+dialogue-contenu:
+  libelle: Contenu de dialogue
+  editeur: pe-dialogue-contenu
+  elements:
+    corps:
+      libelle: Corps de dialogue
+      tag: dialogue-corps
+      requis: true
+    pied:
+      libelle: Pied de dialogue
+      tag: dialogue-pied
+dialogue-corps:
+  libelle: Corps de dialogue
+  blocs:
+  - contenus-rwd
+  - champs
+  - recap
+dialogue-pied:
+  libelle: Pied de dialogue
+  blocs:
+  - bloc-validation
+bouton-fermer-dialogue:
+  libelle: Bouton fermer dialogue
+  editeur: pe-bouton-fermer-dialogue
+bloc-fil-ariane:
+  libelle: Bloc fil d'Ariane
+  editeur: pe-bloc-fil-ariane
+  blocs:
+  - lien
+bloc-titre:
+  libelle: Bloc de titre
+  elements:
+    titre:
+      libelle: Titre
+      tag: titre
+      requis: true
+    barreProgression:
+      libelle: Barre de progression
+      tag: barre-progression
+bloc-messages:
+  libelle: Bloc de messages
+  blocs:
+  - message
+message:
+  libelle: Message
+  editeur: pe-message
+  blocs:
+  - span-texte
+  - lien
+bloc-validation:
+  libelle: Bloc de validation
+  editeur: pe-bloc-validation
+  blocs:
+  - bouton-submit
+  - lien
+  - bouton-fermer-dialogue
+bouton-submit:
+  libelle: Bouton validation
+  editeur: pe-bouton-submit
+bloc-contenu:
+  libelle: Bloc de contenu
+  blocs:
+  - panneau-rwd
+  - sections-rwd
+  - panneau-flex
+  - panneau-sections
+sections-rwd:
+  libelle: Groupe sections
+  editeur: pe-sections-rwd
+  blocs:
+  - section-rwd
+section-rwd:
+  libelle: Section responsive
+  editeur: pe-section-rwd
+  blocs:
+  - sections-rwd
+  - panneau-sections
+  - panneau-rwd
+  - panneau-flex
+  - panneau-lien
+panneau-sections:
+  libelle: Panneau sections
+  editeur: pe-panneau-sections
+  blocs:
+  - sections-rwd
+panneau-rwd:
+  libelle: Panneau responsive
+  editeur: pe-panneau-rwd
+  blocs:
+  - contenus-rwd
+  - champs
+  - bloc-validation
+  - recap
+contenus-rwd:
+  libelle: Groupe responsive
+  editeur: pe-contenus-rwd
+  blocs:
+  - contenu-rwd
+contenu-rwd:
+  libelle: Contenu responsive
+  editeur: pe-contenu-rwd
+  blocs:
+  - contenus-rwd
+  - flex
+  - panneau-flex
+  - panneau-lien
+  - titre
+  - titre-simple
+  - recap
+  - paragraphe
+  - liste
+  - liste-ordonnee
+  - lien
+  - span-texte
+  - bouton-submit
+  - icone
+  - image-externe
+  - image-svg
+  - pagination
+  - tableau
+panneau-flex:
+  libelle: Panneau Flex
+  editeur: pe-panneau-flex
+  blocs:
+  - flex
+  - panneau-flex
+  - panneau-lien
+  - menu-vertical
+  - titre
+  - titre-simple
+  - paragraphe
+  - liste
+  - liste-ordonnee
+  - lien
+  - icone
+  - span-texte
+  - image-externe
+  - image-svg
+  - bouton-submit
+  - pagination
+panneau-lien:
+  libelle: Panneau lien
+  editeur: pe-panneau-lien
+  blocs:
+  - panneau-flex
+  - flex
+  - span-texte
+  - paragraphe
+  - icone
+  - image-externe
+  - image-svg
+flex:
+  libelle: Flex
+  editeur: pe-flex
+  blocs:
+  - flex
+  - panneau-flex
+  - panneau-lien
+  - titre-simple
+  - paragraphe
+  - liste
+  - liste-ordonnee
+  - lien
+  - span-texte
+  - icone
+  - image-externe
+  - image-svg
+  - bouton-submit
+  - action-privee
+  - pagination
+menu-vertical:
+  libelle: Menu vertical
+  editeur: pe-menu-vertical
+  blocs:
+  - element-menu-vertical
+element-menu-vertical:
+  libelle: Rubrique menu
+  editeur: pe-element-menu-vertical
+titre:
+  libelle: Titre Charte
+  editeur: pe-titre
+titre-simple:
+  libelle: Titre
+  editeur: pe-titre-simple
+paragraphe:
+  libelle: Paragraphe
+  editeur: pe-paragraphe
+  blocs:
+  - span-texte
+  - lien
+  - icone
+  - image-svg
+lien:
+  libelle: Lien
+  editeur: pe-lien
+action-privee:
+  libelle: Action privée
+  editeur: pe-action-privee
+liste:
+  libelle: Liste
+  editeur: pe-liste
+  blocs:
+  - element-liste
+liste-ordonnee:
+  libelle: Liste ordonnée
+  editeur: pe-liste-ordonnee
+  blocs:
+  - element-liste
+element-liste:
+  libelle: Element de liste
+  editeur: pe-element-liste
+  blocs:
+  - span-texte
+  - lien
+  - icone
+  - image-externe
+  - image-svg
+  - contenus-rwd
+  - recap
+  - champs
+  - flex
+recap:
+  libelle: Récapitulatif
+  editeur: pe-recap
+  blocs:
+  - recap-dt
+  - recap-dd
+recap-dt:
+  libelle: Terme
+  editeur: pe-recap-dt
+recap-dd:
+  libelle: Description
+  blocs:
+  - flex
+  - span-texte
+  - lien
+  - icone
+  - image-svg
+span-texte:
+  libelle: Texte
+  editeur: pe-span-texte
+icone:
+  libelle: Icône
+  editeur: pe-icone
+image-externe:
+  libelle: Image
+  editeur: pe-image-externe
+image-svg:
+  libelle: Image SVG
+  editeur: pe-image-svg
+barre-progression:
+  libelle: Barre de progression
+  editeur: pe-barre-progression
+  blocs:
+  - etape-barre-progression
+etape-barre-progression:
+  libelle: Etape
+  editeur: pe-etape-barre-progression
+pagination:
+  libelle: Pagination
+  editeur: pe-pagination
+champs:
+  libelle: Ensemble champs
+  editeur: pe-champs
+  blocs:
+  - groupe-champs
+  - groupe-radios
+  - bloc-champ-saisie
+  - bloc-zone-edition
+  - case-cocher
+  - bloc-liste-selection
+  - bloc-champ-affichage
+groupe-champs:
+  libelle: Groupe de champs
+  editeur: pe-groupe-champs
+  blocs:
+  - champs
+groupe-radios:
+  libelle: Groupe radios
+  editeur: pe-groupe-radios
+  blocs:
+  - bouton-radio
+libelle-champ:
+  libelle: Libellé
+  editeur: pe-libelle-champ
+bloc-champ-saisie:
+  libelle: Champ de saisie
+  editeur: pe-bloc-champ-saisie
+  elements:
+    controle:
+      libelle: Contrôle
+      tag: champ-saisie
+      requis: true
+    libelle:
+      libelle: Libellé
+      tag: libelle-champ
+champ-saisie:
+  libelle: Contrôle
+  editeur: pe-champ-saisie
+bloc-zone-edition:
+  libelle: Zone d'édition
+  editeur: pe-bloc-zone-edition
+  elements:
+    controle:
+      libelle: Contrôle
+      tag: zone-edition
+      requis: true
+    libelle:
+      libelle: Libellé
+      tag: libelle-champ
+zone-edition:
+  libelle: Contrôle
+  editeur: pe-zone-edition
+case-cocher:
+  libelle: Case à cocher
+  editeur: pe-case-cocher
+bloc-liste-selection:
+  libelle: Liste de sélection
+  editeur: pe-bloc-liste-selection
+  elements:
+    controle:
+      libelle: Contrôle
+      tag: liste-selection
+      requis: true
+    libelle:
+      libelle: Libellé
+      tag: libelle-champ
+liste-selection:
+  libelle: Contrôle
+  editeur: pe-liste-selection
+  blocs:
+  - liste-selection-option
+  - liste-selection-groupe
+liste-selection-groupe:
+  libelle: Groupe
+  editeur: pe-liste-selection-groupe
+  blocs:
+  - liste-selection-option
+liste-selection-option:
+  libelle: Option
+  editeur: pe-liste-selection-option
+bouton-radio:
+  libelle: Bouton radio
+  editeur: pe-bouton-radio
+bloc-champ-affichage:
+  libelle: Champ d'affichage
+  editeur: pe-bloc-champ-affichage
+  elements:
+    controle:
+      libelle: Contrôle
+      tag: champ-affichage
+      requis: true
+    libelle:
+      libelle: Libellé
+      tag: libelle-champ
+champ-affichage:
+  libelle: Contrôle
+  editeur: pe-champ-affichage
+tableau:
+  libelle: Tableau de données
+  editeur: pe-tableau
+  elements:
+    entete:
+      libelle: Entête de tableau
+      tag: entete-tableau
+      requis: true
+    corps:
+      libelle: Corps de tableau
+      tag: corps-tableau
+      requis: true
+entete-tableau:
+  libelle: Entête du tableau
+  blocs:
+  - ligne-entete-tableau
+corps-tableau:
+  libelle: Corps du tableau
+  blocs:
+  - ligne-corps-tableau
+ligne-entete-tableau:
+  libelle: Ligne d'entête du tableau
+  editeur: pe-ligne-entete-tableau
+  blocs:
+  - cellule-entete-tableau
+ligne-corps-tableau:
+  libelle: Ligne de corps de tableau
+  editeur: pe-ligne-corps-tableau
+  blocs:
+  - cellule-entete-tableau
+  - cellule-tableau
+cellule-entete-tableau:
+  libelle: Cellule d'entête de tableau
+  editeur: pe-cellule-entete-tableau
+  blocs:
+  - panneau-flex
+  - panneau-lien
+  - titre
+  - titre-simple
+  - recap
+  - paragraphe
+  - liste
+  - liste-ordonnee
+  - lien
+  - span-texte
+  - bouton-submit
+  - icone
+  - image-externe
+  - image-svg
+cellule-tableau:
+  libelle: Cellule de tableau
+  editeur: pe-cellule-tableau
+  blocs:
+  - panneau-flex
+  - panneau-lien
+  - titre
+  - titre-simple
+  - recap
+  - paragraphe
+  - liste
+  - liste-ordonnee
+  - lien
+  - span-texte
+  - bouton-submit
+  - icone
+  - image-externe
+  - image-svg

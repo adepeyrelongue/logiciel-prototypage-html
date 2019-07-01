@@ -1,0 +1,13 @@
+libelle: Avec libellé
+definition:
+  libelle: Libellé
+  xs: 12
+  sm: 6
+  elements:
+    libelle:
+      xs: 12
+      sm: 6
+    controle:
+      valeur: Valeur
+      xs: 12
+      sm: 6

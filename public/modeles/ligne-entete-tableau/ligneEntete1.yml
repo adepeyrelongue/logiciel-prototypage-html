@@ -1,0 +1,27 @@
+libelle: Ligne d'entête
+definition:
+  blocs:
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 1
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 2
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 3
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 4
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 5
+  - tag: cellule-entete-tableau
+    blocs:
+    - tag: span-texte
+      texte: Entete 6

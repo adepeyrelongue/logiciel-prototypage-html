@@ -1,0 +1,476 @@
+<template>
+  <div>
+    <div class="flex-row align-items-center">
+      <span v-if="icone" class="font-size-h2 mr-1" :class="icone"></span>
+      <button
+        type="button"
+        class="btn btn-default"
+        title="Choisir le picto"
+        data-toggle="modal"
+        data-target="#ib-modal-icones"
+      ><span class="glyphicon glyphicon-pencil"></span></button>
+      <button v-if="icone" type="button" class="btn btn-default ml-1_4" title="Retirer le picto" @click.prevent="supprimer"><span class="glyphicon glyphicon-trash"></span></button>
+    </div>
+    <div
+      class="modal"
+      role="dialog"
+      aria-labelledby="ib-modal-icones-label"
+      id="ib-modal-icones"
+      tabindex="-1"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="ib-modal-icones-label">Icônes</h4>
+          </div>
+          <div class="modal-body">
+            <p>Bibliothèque des icônes transverses</p>
+            <ul class="list-unstyled flex-row flex-wrap">
+              <li v-for="icone in icones" :key="icone">
+                <button
+                  type="button"
+                  class="btn btn-gris-100"
+                  data-dismiss="modal"
+                  @click.prevent="handleSelection(icone)"
+                >
+                  <span class="p-1_2 font-size-48" :class="icone"></span>
+                </button>
+              </li>
+            </ul>
+            <p class="mt-3">Icônes Bootstrap</p>
+            <ul class="mt-3_2 list-unstyled flex-row flex-wrap">
+              <li v-for="icone in iconesBs" :key="icone">
+                <button
+                  type="button"
+                  class="btn btn-gris-100"
+                  data-dismiss="modal"
+                  @click.prevent="handleSelection(icone)"
+                >
+                  <span class="p-1_2 font-size-48" :class="icone"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6 col-xs-offset-3">
+                <div class="btn-group btn-group-justified">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "selecteur-icone",
+  props: {
+    value: String
+  },
+  data: function() {
+    return {
+      icone: this.value,
+      icones: [
+        "dgfipicon dgfipicon-aide-demander",
+        "dgfipicon dgfipicon-calendrier",
+        "dgfipicon dgfipicon-deplier",
+        "dgfipicon dgfipicon-download",
+        "dgfipicon dgfipicon-enregistrer",
+        "dgfipicon dgfipicon-imprimer",
+        "dgfipicon dgfipicon-payer",
+        "dgfipicon dgfipicon-plier",
+        "dgfipicon dgfipicon-upload",
+        "dgfipicon dgfipicon-wizard",
+        "dgfipicon dgfipicon-cadenas-ferme",
+        "dgfipicon dgfipicon-cadenas-ouvert",
+        "dgfipicon dgfipicon-deconnexion",
+        "dgfipicon dgfipicon-page-derniere",
+        "dgfipicon dgfipicon-page-precedente",
+        "dgfipicon dgfipicon-page-premiere",
+        "dgfipicon dgfipicon-page-suivante",
+        "dgfipicon dgfipicon-profil",
+        "dgfipicon dgfipicon-rechercher",
+        "dgfipicon dgfipicon-actualites",
+        "dgfipicon dgfipicon-attention",
+        "dgfipicon dgfipicon-contacts",
+        "dgfipicon dgfipicon-courriel",
+        "dgfipicon dgfipicon-courriels-frauduleux",
+        "dgfipicon dgfipicon-document",
+        "dgfipicon dgfipicon-document-pdf",
+        "dgfipicon dgfipicon-documents",
+        "dgfipicon dgfipicon-documents-groupe",
+        "dgfipicon dgfipicon-engagements",
+        "dgfipicon dgfipicon-flux-rss",
+        "dgfipicon dgfipicon-poste",
+        "dgfipicon dgfipicon-puce",
+        "dgfipicon dgfipicon-sortie-page",
+        "dgfipicon dgfipicon-statistiques",
+        "dgfipicon dgfipicon-telephone",
+        "dgfipicon dgfipicon-aide",
+        "dgfipicon dgfipicon-erreur",
+        "dgfipicon dgfipicon-fermer",
+        "dgfipicon dgfipicon-info",
+        "dgfipicon dgfipicon-ok",
+        "dgfipicon dgfipicon-visualiser-non",
+        "dgfipicon dgfipicon-dupliquer",
+        "dgfipicon dgfipicon-modifier",
+        "dgfipicon dgfipicon-supprimer",
+        "dgfipicon dgfipicon-visualiser-oui",
+        "dgfipicon dgfipicon-attestation",
+        "dgfipicon dgfipicon-cochon",
+        "dgfipicon dgfipicon-epingle",
+        "dgfipicon dgfipicon-remuneration",
+        "dgfipicon dgfipicon-controle-fiscal",
+        "dgfipicon dgfipicon-activites-collectivites",
+        "dgfipicon dgfipicon-amenager-territoire",
+        "dgfipicon dgfipicon-consulter-comptes",
+        "dgfipicon dgfipicon-consulter-valeurs-foncieres",
+        "dgfipicon dgfipicon-exercer-activite",
+        "dgfipicon dgfipicon-piloter-budget",
+        "dgfipicon dgfipicon-preparer-budget",
+        "dgfipicon dgfipicon-non-resident-interets-france",
+        "dgfipicon dgfipicon-partir-etranger",
+        "dgfipicon dgfipicon-resident-interets-etranger",
+        "dgfipicon dgfipicon-retour-france",
+        "dgfipicon dgfipicon-activite-france-avec-etablissement",
+        "dgfipicon dgfipicon-activite-france-sans-etablissement",
+        "dgfipicon dgfipicon-entreprise",
+        "dgfipicon dgfipicon-projet-investissement",
+        "dgfipicon dgfipicon-transmettre-cesser-activiter",
+        "dgfipicon dgfipicon-declarer",
+        "dgfipicon dgfipicon-cesser-activite",
+        "dgfipicon dgfipicon-creer-entreprise",
+        "dgfipicon dgfipicon-exercer-dom",
+        "dgfipicon dgfipicon-exercer-international",
+        "dgfipicon dgfipicon-gerer-entreprise",
+        "dgfipicon dgfipicon-deductions",
+        "dgfipicon dgfipicon-demenagement",
+        "dgfipicon dgfipicon-prime-emploi",
+        "dgfipicon dgfipicon-revenus",
+        "dgfipicon dgfipicon-situation-famille",
+        "dgfipicon dgfipicon-taxe-residences-mobiles",
+        "dgfipicon dgfipicon-auto-entrepreneur",
+        "dgfipicon dgfipicon-cfe-cvae",
+        "dgfipicon dgfipicon-cice",
+        "dgfipicon dgfipicon-creation-cessation",
+        "dgfipicon dgfipicon-impot-societes",
+        "dgfipicon dgfipicon-regimes-imposition",
+        "dgfipicon dgfipicon-tva",
+        "dgfipicon dgfipicon-amende",
+        "dgfipicon dgfipicon-cadastre",
+        "dgfipicon dgfipicon-changement-situation-perso",
+        "dgfipicon dgfipicon-consulter-voies",
+        "dgfipicon dgfipicon-contacter-administration",
+        "dgfipicon dgfipicon-deces",
+        "dgfipicon dgfipicon-evaluer-bien",
+        "dgfipicon dgfipicon-gerer-mes-impots",
+        "dgfipicon dgfipicon-gerer-patrimoine",
+        "dgfipicon dgfipicon-obtenir-document",
+        "dgfipicon dgfipicon-payer-factures-locales",
+        "dgfipicon dgfipicon-resoudre-difficultes",
+        "dgfipicon dgfipicon-simulateurs",
+        "dgfipicon dgfipicon-taxe-fonciere",
+        "dgfipicon dgfipicon-taxe-habitation",
+        "dgfipicon dgfipicon-timbre-fiscale",
+        "dgfipicon dgfipicon-ventes-domaniales",
+        "dgfipicon dgfipicon-verifier-avis-impots",
+        "dgfipicon dgfipicon-option-active",
+        "dgfipicon dgfipicon-option-inactive",
+        "dgfipicon dgfipicon-rafraichir",
+        "dgfipicon dgfipicon-retour-haut",
+        "dgfipicon dgfipicon-accueil-menu",
+        "dgfipicon dgfipicon-tableau-de-bord",
+        "dgfipicon dgfipicon-table-des-matieres",
+        "dgfipicon dgfipicon-panier-cart-ajouter",
+        "dgfipicon dgfipicon-panier-cart-vide",
+        "dgfipicon dgfipicon-tri-ascendant",
+        "dgfipicon dgfipicon-tri-descendant",
+        "dgfipicon dgfipicon-tri-triable"
+      ],
+      iconesBs: [
+        "glyphicon glyphicon-asterisk",
+        "glyphicon glyphicon-plus",
+        "glyphicon glyphicon-euro",
+        "glyphicon glyphicon-eur",
+        "glyphicon glyphicon-minus",
+        "glyphicon glyphicon-cloud",
+        "glyphicon glyphicon-envelope",
+        "glyphicon glyphicon-pencil",
+        "glyphicon glyphicon-glass",
+        "glyphicon glyphicon-music",
+        "glyphicon glyphicon-search",
+        "glyphicon glyphicon-heart",
+        "glyphicon glyphicon-star",
+        "glyphicon glyphicon-star-empty",
+        "glyphicon glyphicon-user",
+        "glyphicon glyphicon-film",
+        "glyphicon glyphicon-th-large",
+        "glyphicon glyphicon-th",
+        "glyphicon glyphicon-th-list",
+        "glyphicon glyphicon-ok",
+        "glyphicon glyphicon-remove",
+        "glyphicon glyphicon-zoom-in",
+        "glyphicon glyphicon-zoom-out",
+        "glyphicon glyphicon-off",
+        "glyphicon glyphicon-signal",
+        "glyphicon glyphicon-cog",
+        "glyphicon glyphicon-trash",
+        "glyphicon glyphicon-home",
+        "glyphicon glyphicon-file",
+        "glyphicon glyphicon-time",
+        "glyphicon glyphicon-road",
+        "glyphicon glyphicon-download-alt",
+        "glyphicon glyphicon-download",
+        "glyphicon glyphicon-upload",
+        "glyphicon glyphicon-inbox",
+        "glyphicon glyphicon-play-circle",
+        "glyphicon glyphicon-repeat",
+        "glyphicon glyphicon-refresh",
+        "glyphicon glyphicon-list-alt",
+        "glyphicon glyphicon-lock",
+        "glyphicon glyphicon-flag",
+        "glyphicon glyphicon-headphones",
+        "glyphicon glyphicon-volume-off",
+        "glyphicon glyphicon-volume-down",
+        "glyphicon glyphicon-volume-up",
+        "glyphicon glyphicon-qrcode",
+        "glyphicon glyphicon-barcode",
+        "glyphicon glyphicon-tag",
+        "glyphicon glyphicon-tags",
+        "glyphicon glyphicon-book",
+        "glyphicon glyphicon-bookmark",
+        "glyphicon glyphicon-print",
+        "glyphicon glyphicon-camera",
+        "glyphicon glyphicon-font",
+        "glyphicon glyphicon-bold",
+        "glyphicon glyphicon-italic",
+        "glyphicon glyphicon-text-height",
+        "glyphicon glyphicon-text-width",
+        "glyphicon glyphicon-align-left",
+        "glyphicon glyphicon-align-center",
+        "glyphicon glyphicon-align-right",
+        "glyphicon glyphicon-align-justify",
+        "glyphicon glyphicon-list",
+        "glyphicon glyphicon-indent-left",
+        "glyphicon glyphicon-indent-right",
+        "glyphicon glyphicon-facetime-video",
+        "glyphicon glyphicon-picture",
+        "glyphicon glyphicon-map-marker",
+        "glyphicon glyphicon-adjust",
+        "glyphicon glyphicon-tint",
+        "glyphicon glyphicon-edit",
+        "glyphicon glyphicon-share",
+        "glyphicon glyphicon-check",
+        "glyphicon glyphicon-move",
+        "glyphicon glyphicon-step-backward",
+        "glyphicon glyphicon-fast-backward",
+        "glyphicon glyphicon-backward",
+        "glyphicon glyphicon-play",
+        "glyphicon glyphicon-pause",
+        "glyphicon glyphicon-stop",
+        "glyphicon glyphicon-forward",
+        "glyphicon glyphicon-fast-forward",
+        "glyphicon glyphicon-step-forward",
+        "glyphicon glyphicon-eject",
+        "glyphicon glyphicon-chevron-left",
+        "glyphicon glyphicon-chevron-right",
+        "glyphicon glyphicon-plus-sign",
+        "glyphicon glyphicon-minus-sign",
+        "glyphicon glyphicon-remove-sign",
+        "glyphicon glyphicon-ok-sign",
+        "glyphicon glyphicon-question-sign",
+        "glyphicon glyphicon-info-sign",
+        "glyphicon glyphicon-screenshot",
+        "glyphicon glyphicon-remove-circle",
+        "glyphicon glyphicon-ok-circle",
+        "glyphicon glyphicon-ban-circle",
+        "glyphicon glyphicon-arrow-left",
+        "glyphicon glyphicon-arrow-right",
+        "glyphicon glyphicon-arrow-up",
+        "glyphicon glyphicon-arrow-down",
+        "glyphicon glyphicon-share-alt",
+        "glyphicon glyphicon-resize-full",
+        "glyphicon glyphicon-resize-small",
+        "glyphicon glyphicon-exclamation-sign",
+        "glyphicon glyphicon-gift",
+        "glyphicon glyphicon-leaf",
+        "glyphicon glyphicon-fire",
+        "glyphicon glyphicon-eye-open",
+        "glyphicon glyphicon-eye-close",
+        "glyphicon glyphicon-warning-sign",
+        "glyphicon glyphicon-plane",
+        "glyphicon glyphicon-calendar",
+        "glyphicon glyphicon-random",
+        "glyphicon glyphicon-comment",
+        "glyphicon glyphicon-magnet",
+        "glyphicon glyphicon-chevron-up",
+        "glyphicon glyphicon-chevron-down",
+        "glyphicon glyphicon-retweet",
+        "glyphicon glyphicon-shopping-cart",
+        "glyphicon glyphicon-folder-close",
+        "glyphicon glyphicon-folder-open",
+        "glyphicon glyphicon-resize-vertical",
+        "glyphicon glyphicon-resize-horizontal",
+        "glyphicon glyphicon-hdd",
+        "glyphicon glyphicon-bullhorn",
+        "glyphicon glyphicon-bell",
+        "glyphicon glyphicon-certificate",
+        "glyphicon glyphicon-thumbs-up",
+        "glyphicon glyphicon-thumbs-down",
+        "glyphicon glyphicon-hand-right",
+        "glyphicon glyphicon-hand-left",
+        "glyphicon glyphicon-hand-up",
+        "glyphicon glyphicon-hand-down",
+        "glyphicon glyphicon-circle-arrow-right",
+        "glyphicon glyphicon-circle-arrow-left",
+        "glyphicon glyphicon-circle-arrow-up",
+        "glyphicon glyphicon-circle-arrow-down",
+        "glyphicon glyphicon-globe",
+        "glyphicon glyphicon-wrench",
+        "glyphicon glyphicon-tasks",
+        "glyphicon glyphicon-filter",
+        "glyphicon glyphicon-briefcase",
+        "glyphicon glyphicon-fullscreen",
+        "glyphicon glyphicon-dashboard",
+        "glyphicon glyphicon-paperclip",
+        "glyphicon glyphicon-heart-empty",
+        "glyphicon glyphicon-link",
+        "glyphicon glyphicon-phone",
+        "glyphicon glyphicon-pushpin",
+        "glyphicon glyphicon-usd",
+        "glyphicon glyphicon-gbp",
+        "glyphicon glyphicon-sort",
+        "glyphicon glyphicon-sort-by-alphabet",
+        "glyphicon glyphicon-sort-by-alphabet-alt",
+        "glyphicon glyphicon-sort-by-order",
+        "glyphicon glyphicon-sort-by-order-alt",
+        "glyphicon glyphicon-sort-by-attributes",
+        "glyphicon glyphicon-sort-by-attributes-alt",
+        "glyphicon glyphicon-unchecked",
+        "glyphicon glyphicon-expand",
+        "glyphicon glyphicon-collapse-down",
+        "glyphicon glyphicon-collapse-up",
+        "glyphicon glyphicon-log-in",
+        "glyphicon glyphicon-flash",
+        "glyphicon glyphicon-log-out",
+        "glyphicon glyphicon-new-window",
+        "glyphicon glyphicon-record",
+        "glyphicon glyphicon-save",
+        "glyphicon glyphicon-open",
+        "glyphicon glyphicon-saved",
+        "glyphicon glyphicon-import",
+        "glyphicon glyphicon-export",
+        "glyphicon glyphicon-send",
+        "glyphicon glyphicon-floppy-disk",
+        "glyphicon glyphicon-floppy-saved",
+        "glyphicon glyphicon-floppy-remove",
+        "glyphicon glyphicon-floppy-save",
+        "glyphicon glyphicon-floppy-open",
+        "glyphicon glyphicon-credit-card",
+        "glyphicon glyphicon-transfer",
+        "glyphicon glyphicon-cutlery",
+        "glyphicon glyphicon-header",
+        "glyphicon glyphicon-compressed",
+        "glyphicon glyphicon-earphone",
+        "glyphicon glyphicon-phone-alt",
+        "glyphicon glyphicon-tower",
+        "glyphicon glyphicon-stats",
+        "glyphicon glyphicon-sd-video",
+        "glyphicon glyphicon-hd-video",
+        "glyphicon glyphicon-subtitles",
+        "glyphicon glyphicon-sound-stereo",
+        "glyphicon glyphicon-sound-dolby",
+        "glyphicon glyphicon-sound-5-1",
+        "glyphicon glyphicon-sound-6-1",
+        "glyphicon glyphicon-sound-7-1",
+        "glyphicon glyphicon-copyright-mark",
+        "glyphicon glyphicon-registration-mark",
+        "glyphicon glyphicon-cloud-download",
+        "glyphicon glyphicon-cloud-upload",
+        "glyphicon glyphicon-tree-conifer",
+        "glyphicon glyphicon-tree-deciduous",
+        "glyphicon glyphicon-cd",
+        "glyphicon glyphicon-save-file",
+        "glyphicon glyphicon-open-file",
+        "glyphicon glyphicon-level-up",
+        "glyphicon glyphicon-copy",
+        "glyphicon glyphicon-paste",
+        "glyphicon glyphicon-alert",
+        "glyphicon glyphicon-equalizer",
+        "glyphicon glyphicon-king",
+        "glyphicon glyphicon-queen",
+        "glyphicon glyphicon-pawn",
+        "glyphicon glyphicon-bishop",
+        "glyphicon glyphicon-knight",
+        "glyphicon glyphicon-baby-formula",
+        "glyphicon glyphicon-tent",
+        "glyphicon glyphicon-blackboard",
+        "glyphicon glyphicon-bed",
+        "glyphicon glyphicon-apple",
+        "glyphicon glyphicon-erase",
+        "glyphicon glyphicon-hourglass",
+        "glyphicon glyphicon-lamp",
+        "glyphicon glyphicon-duplicate",
+        "glyphicon glyphicon-piggy-bank",
+        "glyphicon glyphicon-scissors",
+        "glyphicon glyphicon-bitcoin",
+        "glyphicon glyphicon-btc",
+        "glyphicon glyphicon-xbt",
+        "glyphicon glyphicon-yen",
+        "glyphicon glyphicon-jpy",
+        "glyphicon glyphicon-ruble",
+        "glyphicon glyphicon-rub",
+        "glyphicon glyphicon-scale",
+        "glyphicon glyphicon-ice-lolly",
+        "glyphicon glyphicon-ice-lolly-tasted",
+        "glyphicon glyphicon-education",
+        "glyphicon glyphicon-option-horizontal",
+        "glyphicon glyphicon-option-vertical",
+        "glyphicon glyphicon-menu-hamburger",
+        "glyphicon glyphicon-modal-window",
+        "glyphicon glyphicon-oil",
+        "glyphicon glyphicon-grain",
+        "glyphicon glyphicon-sunglasses",
+        "glyphicon glyphicon-text-size",
+        "glyphicon glyphicon-text-color",
+        "glyphicon glyphicon-text-background",
+        "glyphicon glyphicon-object-align-top",
+        "glyphicon glyphicon-object-align-bottom",
+        "glyphicon glyphicon-object-align-horizontal",
+        "glyphicon glyphicon-object-align-left",
+        "glyphicon glyphicon-object-align-vertical",
+        "glyphicon glyphicon-object-align-right",
+        "glyphicon glyphicon-triangle-right",
+        "glyphicon glyphicon-triangle-left",
+        "glyphicon glyphicon-triangle-bottom",
+        "glyphicon glyphicon-triangle-top",
+        "glyphicon glyphicon-console",
+        "glyphicon glyphicon-superscript",
+        "glyphicon glyphicon-subscript",
+        "glyphicon glyphicon-menu-left",
+        "glyphicon glyphicon-menu-right",
+        "glyphicon glyphicon-menu-down",
+        "glyphicon glyphicon-menu-up"
+      ]
+    };
+  },
+  methods: {
+    supprimer: function() {
+      this.icone = "";
+      this.$emit("input", "");
+    },
+    handleSelection: function(icone) {
+      this.icone = icone;
+      this.$emit("input", icone);
+    }
+  }
+};
+</script>

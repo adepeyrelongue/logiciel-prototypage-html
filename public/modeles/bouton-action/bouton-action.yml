@@ -1,0 +1,5 @@
+libelle: Bouton action
+definition:
+  id: id-bouton-action
+  libelle: Libellé
+  couleur: particulier

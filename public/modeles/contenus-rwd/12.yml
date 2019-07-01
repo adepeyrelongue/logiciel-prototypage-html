@@ -1,0 +1,5 @@
+libelle: Un contenu
+definition:
+  blocs:
+  - tag: contenu-rwd
+    xs: 12

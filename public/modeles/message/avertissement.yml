@@ -1,0 +1,6 @@
+libelle: Message d'avertissement
+definition:
+  typeMessage: warning
+  blocs:
+  - tag: span-texte
+    texte: Nouveaux documents disponibles dans votre espace.

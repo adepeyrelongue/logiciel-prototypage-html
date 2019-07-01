@@ -1,0 +1,5 @@
+libelle: Bouton radio
+definition:
+  libelle: Libellé
+  xs: 2
+  checked: false

@@ -1,0 +1,27 @@
+libelle: Avec libellé et groupes
+definition:
+  libelle: Libellé
+  xs: 12
+  sm: 6
+  elements:
+    libelle:
+      xs: 12
+      sm: 6
+    controle:
+      xs: 12
+      sm: 6
+      blocs:
+      - tag: liste-selection-groupe
+        libelle: Groupe 1
+        blocs:
+        - tag: liste-selection-option
+          libelle: Option 1
+        - tag: liste-selection-option
+          libelle: Option 2
+      - tag: liste-selection-groupe
+        libelle: Groupe 2
+        blocs:
+        - tag: liste-selection-option
+          libelle: Option 1
+        - tag: liste-selection-option
+          libelle: Option 2

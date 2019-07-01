@@ -1,0 +1,8 @@
+libelle: Message d'information
+definition:
+  blocs:
+  - tag: message
+    typeMessage: info
+    blocs:
+    - tag: span-texte
+      texte: Le service de télédéclaration est ouvert.

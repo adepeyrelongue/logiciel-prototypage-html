@@ -1,0 +1,13 @@
+libelle: Panneau lien avec un texte
+definition:
+  href: destination-du-lien
+  flexGrowSelf: true
+  flex: inline-col
+  couleur: blanc
+  espaceHaut: '1'
+  espaceDroit: '1'
+  espaceBas: '1'
+  espaceGauche: '1'
+  blocs:
+    - tag : span-texte
+      texte: Texte de lien sans style.

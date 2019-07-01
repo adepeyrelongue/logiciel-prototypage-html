@@ -1,0 +1,24 @@
+libelle: Plier un contenu
+definition:
+  flexGrowSelf: true
+  collapse: true
+  href: id-contenu-pliable
+  flex: row
+  alignItems: center
+  margeBasse: '3_2'
+  bordureBasse: 3
+  bordureBasseCouleur: gris-200
+  sansSurlignement: true
+  taillePx: 24
+  blocs:
+  - tag: paragraphe
+    flexGrowSelf: true
+    sansStyle: true
+    heading: true
+    gras: true
+    blocs:
+    - tag: span-texte
+      texte: infos voyageur
+  - tag: icone
+    collapse: true
+    margeGauche: '1_2'

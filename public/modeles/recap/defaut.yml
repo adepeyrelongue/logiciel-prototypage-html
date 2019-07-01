@@ -1,0 +1,21 @@
+libelle: Deux éléments
+definition:
+  xsDt : 12
+  smDt : 4
+  mdDt : 2
+  xsDd : 12
+  smDd : 8
+  mdDd : 10
+  blocs:
+  - tag : recap-dt
+    libelle: Terme 1
+  - tag : recap-dd
+    blocs:
+    - tag: span-texte
+      texte: Description 1
+  - tag : recap-dt
+    libelle: Terme 2
+  - tag : recap-dd
+    blocs:
+    - tag: span-texte
+      texte: Description 2

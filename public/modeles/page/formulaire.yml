@@ -1,0 +1,57 @@
+libelle: Saisie d'un formulaire
+definition:
+  title: Billet de train
+  thematique: partenaire
+  elements:
+    espaceDialogue:
+      blocs:
+      - nomPageActive: Billet de train
+        blocs:
+        - tag: lien
+          texte: Accueil
+          href: index.html
+        tag: bloc-fil-ariane
+      - elements:
+          titre:
+            niveau: 1
+            libelle: Billet de train
+            icone: dgfipicon dgfipicon-consulter-voies
+        tag: bloc-titre
+      - tag: bloc-contenu
+        blocs:
+        - couleur: blanc
+          espaceHaut: '1'
+          espaceBas: '1'
+          tag: panneau-rwd
+          blocs:
+          - blocs:
+            - tag: contenu-rwd
+              xs: 12
+              blocs:
+              - niveau: 2
+                libelle: Réserver un billet de train
+                tag: titre
+            tag: contenus-rwd
+          - blocs:
+            - tag: contenu-rwd
+              xs: 12
+              blocs:
+              - blocs:
+                - tag: span-texte
+                  texte: Les champs marqués d'un astérisque (
+                - texte: '*'
+                  tag: span-texte
+                  couleur: danger
+                - texte: ) doivent être renseignés.
+                  tag: span-texte
+                tag: paragraphe
+                italique: true
+            tag: contenus-rwd
+          - xs: 12
+            sm: 6
+            blocs:
+            - tag: bouton-submit
+              libelle: Recherche
+            tag: bloc-validation
+          formulaire: true
+          action: proposition.html
