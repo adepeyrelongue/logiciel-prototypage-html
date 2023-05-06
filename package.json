@@ -31,7 +31,7 @@
     "electron-context-menu": "^0.11.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-cli-plugin-electron-builder": "^1.0.0-rc.10"
+    "vue-cli-plugin-electron-builder": "^2.1.1"
   },
   "eslintConfig": {
     "root": true,
